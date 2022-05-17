@@ -63,7 +63,7 @@ function PatientBookings(props) {
         <Navbar />
         <MainRight>
           <TitleMain>Your Appointments</TitleMain>
-          <SlotBookingMain>
+          <SlotBookingMain className="zipy-block">
             <div
               style={{
                 display: "flex",
