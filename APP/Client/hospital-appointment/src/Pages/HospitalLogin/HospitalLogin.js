@@ -15,6 +15,8 @@ function HospitalLogin({ LoginHospital }) {
   };
 
   const handleLogin = (data) => {
+    let sessionURL = (window).zipy.getCurrentSessionURL();
+    console.log("sessionURL",sessionURL)
     setLoading(true);
     const credentials = {
       email: data.email,
