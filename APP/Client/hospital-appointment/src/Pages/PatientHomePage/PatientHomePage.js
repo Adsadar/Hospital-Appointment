@@ -28,7 +28,7 @@ function PatientHomePage(props) {
         console.log(err);
       });
   };
-
+  
   useEffect(() => {
     getData(date);
     console.error('new Error')
@@ -60,6 +60,8 @@ function PatientHomePage(props) {
     setOpen(true);
     setSelectedSlot(slotData);
   };
+  window.zipy.identify('76583241', {
+  });
   return (
     <div style={{ width: "100%" }}>
       <Header />
@@ -95,6 +97,7 @@ function PatientHomePage(props) {
       </Main>
     </div>
   );
+ 
 }
 
 const mapStateToProps = (state) => ({
